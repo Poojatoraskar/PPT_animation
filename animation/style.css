@@ -1,0 +1,136 @@
+.animation_one{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: colorchange;
+    animation-duration: 4s;
+}
+@keyframes colorchange {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+
+.keyframes{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: keyframespercentage;
+    animation-duration: 4s;
+}
+@keyframes keyframespercentage {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+
+.keyframestwo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: keyframestwo;
+    animation-duration: 4s;
+    /* animation-delay: 2s; */
+    /* animation-delay: -2s; */
+    /* animation-iteration-count: 3; */
+    /* animation-iteration-count: infinite; */
+}
+@keyframes keyframestwo {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+.direction{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: directionkey;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    /* animation-iteration-count: 2;
+     animation-direction: alternate;   */
+     /* animation-direction: alternate-reverse;
+     animation-iteration-count: 2; */
+}
+@keyframes directionkey {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  .timing{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+
+
+
+  .fil-mode{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: fillmode;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    /* animation-fill-mode: backwards; */
+    /* animation-fill-mode: both; */
+  }
+  @keyframes fillmode {
+    /* from {top: 0px; background-color: yellow;}   for backword */
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+
+    /* for both
+    from {top: 0px; background-color: yellow;}
+  to {top: 200px; background-color: blue;} */
+  }
+
+
+
+
+  .shorthand{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: shorthand;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    /* animation: myfirst 5s linear 2s infinite alternate; */
+  }
+  @keyframes shorthand{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
